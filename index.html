@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renu Sekar Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/590b09137b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav_content">
+            <div class="logo">
+                <a href="#">RENUGA SEKAR</a>
+            </div>
+            <label for="check" class="checkbox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="section">
+        <div class="section_container">
+            <div class="content">
+                <p class="subtitle">HELLO,</p>
+                <h1 class="title">
+                    I'm <span>RENUGA SEKAR</span> Backend Developer, Enthusiastic towards Deep Learning and Data Science 
+                </h1>
+                <p class="description">
+                    I am a non-tech student eager to immerse myself in the world of technology. As a mathematics student, I am used to learning everything through theorems, 
+                    problems, and solutions. However, I want to experience and apply my knowledge 
+                    in real-world scenarios. I am passionate about stepping out of my comfort zone 
+                    and consider myself a "survivor."
+                </p>
+                <div class="action_btns">
+                    <button class="portfolio">Portfolio</button>
+                    <button class="resume"><a href="resume.html" class="resume-a">Download Resume</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/profile.jpg" alt="profile" />
+            </div>
+        </div>
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/about.JPG" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>  
+                    <p>I am a non-tech student eager to immerse myself in the world of technology. As a mathematics student, I am used to learning everything through theorems, 
+                        problems, and solutions. However, I want to experience and apply my knowledge 
+                        in real-world scenarios. I am passionate about stepping out of my comfort zone 
+                        and consider myself a "survivor."
+                    </p> 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>EXP</span><br>Designing web/app interfaces</li>
+                            <li><span>EXP</span><br>Designing web/app interfaces</li>
+                            <li><span>EXP</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>EDU</span><br>Designing web/app interfaces</li>
+                            <li><span>EDU</span><br>Designing web/app interfaces</li>
+                            <li><span>EDU</span><br>Designing web/app interfaces</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>Project description</p>
+                    <a href="#">GitHub link</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Project description</p>
+                    <a href="#">GitHub link</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Project description</p>
+                    <a href="#">GitHub link</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sekarrenuga6@gmail.com</p>
+                    <p>+91 8667768824</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="footer-content">
+            <p>Made by Renu Sekar</p>
+        </div>
+    
+    
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontets = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(var tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(var tabcontent of tabcontets){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
